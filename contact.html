@@ -6,6 +6,7 @@
         <title>My Portfolio - Contact</title>
         <link rel="stylesheet" type="text/css" href="styles/reset.css" />
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
         <script src="scripts.js" type="text/javascript" defer></script>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
     </head>
@@ -24,7 +25,40 @@
         </header>
 
         <main>
-           
+           <div id="container">
+                <h2>Contact Me</h2>
+
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Message Form</legend>
+                        <label for="name">
+                            Name: 
+                            <input type="text" name="name" id="name" placeholder="Your Name" />
+                        </label>
+                        <label for="email">
+                            Email:
+                            <input type="text" name="email" id="email" placeholder="Your Email" />
+                        </label>
+                        <label for="message">
+                            Message:
+                            <textarea name="message" id="message" rows="5" cols="10"></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Subscribe</legend>
+                        <p>Do you want to subscribe to my newsletter?</p>
+                        <label for="yes">
+                            <input type="radio" name="subscribe" id="yes" value="yes" />
+                            Yes
+                        </label>
+                        <label for="no">
+                            <input type="radio" name="subscribe" id="no" value="No" />
+                            No
+                        </label>
+                    </fieldset>
+                    <button type="submit" id="submit">Send Message</button>
+                </form>
+           </div>
         </main>
 
         <footer>
