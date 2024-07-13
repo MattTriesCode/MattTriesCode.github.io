@@ -15,7 +15,7 @@ These will provide different areas for practicing the HTML structure and CSS sty
 
 ### Home Page
 
-The portfolio's home page, **index.html**, will introduce me and contain contain:
+The portfolio's home page, **index.html**, will introduce me and contain:
 
 - A header with title and navigation links
 - An introductory paragraph about myself
@@ -24,13 +24,13 @@ The portfolio's home page, **index.html**, will introduce me and contain contain
 
 ### Projects
 
-The projects page, **projects.html**, is a grid of gallery of projects, each of which will contain:
+The projects page, **projects.html**, will be a grid or gallery of project blurbs, each of which will include:
 
 - A screenshot of the project
 - The project title
 - A brief description of the project
 
-These will be arranged using either CSS Grid or CSS flexbox.
+These will be arranged using either CSS Grid or CSS Flexbox.
 
 ### Resume
 
