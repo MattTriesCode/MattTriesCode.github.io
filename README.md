@@ -1,6 +1,6 @@
-#Portfolio Project
+# Portfolio Project
 
-##Objective
+## Objective
 
 Create an example portfolio website to practice some basic HTML, CSS, and JavaScript, as well as wireframing and planning for a project.  This portfolio site will contain several pages:
 
@@ -11,9 +11,9 @@ Create an example portfolio website to practice some basic HTML, CSS, and JavaSc
 
 These will provide different areas for practicing the HTML structure and CSS styling of tables, forms, and images.  The project will also have a JavaScript file, a CSS file, and an images folder with a portfolio image, project screenshots, and social media link images.
 
-##Portfolio Site Pages
+## Portfolio Site Pages
 
-###Home Page
+### Home Page
 
 The portfolio's home page, **index.html**, will introduce me and contain contain:
 
@@ -22,7 +22,7 @@ The portfolio's home page, **index.html**, will introduce me and contain contain
 - A photo of myself
 - A footer with social media links
 
-###Projects
+### Projects
 
 The projects page, **projects.html**, is a grid of gallery of projects, each of which will contain:
 
@@ -32,7 +32,7 @@ The projects page, **projects.html**, is a grid of gallery of projects, each of 
 
 These will be arranged using either CSS Grid or CSS flexbox.
 
-###Resume
+### Resume
 
 The resume page, **resume.html**, will contain my fake resume, organized as an HTML table styled by CSS.  The resume will include:
 
@@ -42,7 +42,7 @@ The resume page, **resume.html**, will contain my fake resume, organized as an H
 - Skills
 - Past jobs
 
-###Contact
+### Contact
 
 The contact page, **contact.html**, will let visitors send me a message with an HTML form styled by CSS.  The form will contain the following fields:
 
