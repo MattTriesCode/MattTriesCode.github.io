@@ -12,44 +12,111 @@
     </head>
     <body>
         
+        <!-- Header with name and several external links-->
         <header>
-            <h1>Portfolio</h1>
+            <h1><a href="/">Matthew Coder</a></h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+                <a href="https://github.com" target="_blank">
+                    <span>Github</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:mattcoder@example.com">
+                    <span>Email</span>
+                </a>
             </nav>
         </header>
 
+        <!-- Body with "hero" intro, skills, endorsements, and contact form sections -->
         <main>
-            <div id="container">
-                <section>
-                    <h2>Welcome to my portfolio!</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed feugiat metus. Vivamus tincidunt elit quis enim luctus auctor. In hac habitasse platea dictumst. Ut faucibus, enim quis vehicula tempor, magna quam congue ipsum, blandit blandit lacus turpis eu elit. Mauris tincidunt sit amet lacus ut porta. Donec quam eros, elementum nec velit eget, elementum elementum arcu. Cras et blandit eros, sed imperdiet massa. Suspendisse sollicitudin velit mauris, at laoreet erat ullamcorper et. Vivamus accumsan elit ut tristique ornare.</p>
-                </section>
-                <section>
-                    <figure>
-                        <img src="images/pacman.jpg" alt="pacman" />
-                        <figcaption>Me Having Dinner</figcaption>
-                    </figure>
-                </section>
-            </div>
+            
+            <!-- Intro paragraph and photo -->
+            <section id="intro">
+                <h2>Need help coding?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, accusamus sint! Culpa dolorum, inventore hic cumque nobis quas voluptates repellendus voluptas possimus libero. Maxime deleniti aliquid amet dolorum unde, repellat illo eius alias doloremque quos in provident, atque, necessitatibus ut est beatae. Inventore nesciunt, explicabo totam eveniet pariatur repellendus suscipit.</p>
+                <nav>
+                    <a href="#skills">
+                        <span>Skills</span>
+                    </a>
+                    <a href="#references">
+                        <span>Endorsements</span>
+                    </a>
+                    <a href="#contact">
+                        <span>Contact Me!</span>
+                    </a>
+                </nav>
+            </section>
+
+            <!-- Explanation of experience and list of skills -->
+            <section id="skills">
+                <h2>My Coding Skills</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, pariatur, aspernatur numquam perspiciatis dolorem labore iste recusandae aperiam facilis doloremque nemo libero inventore quod ipsa nihil ullam molestiae qui fugit temporibus. Voluptate et cum aliquid magnam. A quasi totam nesciunt expedita blanditiis. Iste quis blanditiis voluptatum facilis iusto est laborum!</p>
+                <ul>
+                    <li>
+                        <img src="" alt="" />
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="" />
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="" />
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="" />
+                        <span></span>
+                    </li>
+                    <li>
+                        <img src="" alt="" />
+                        <span></span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Endorsements / testimonials from satisfied customers -->
+            <section id="endorsements">
+                <h2>Endorsements</h2>
+                <div class="twoblocks">
+                    <div class="person">
+                        <img src="" alt="" />
+                        <h3>John Smith</h3>
+                        <p>Professional Pep Talker</p>
+                    </div>
+                    <div class="quote">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ipsa obcaecati iure sint perspiciatis eum deleniti? Ratione sint voluptas quae expedita quasi perspiciatis sed aut quis reiciendis nobis, adipisci fugiat. Vel, voluptate ullam. Excepturi quibusdam laboriosam, ratione aliquam molestiae in veritatis, at consequuntur porro fugiat amet soluta reprehenderit voluptatibus earum!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- A contact form -->
+             <section id="contact">
+                <h2>Contact Me!</h2>
+                <div class="twoblocks">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente a quam repellendus quasi facere mollitia obcaecati fugit minus, cupiditate doloremque tempore voluptatum similique qui quis vero, vel, corporis cum ipsa. Quas labore autem officiis! Quod aut atque eveniet obcaecati quo iste delectus laboriosam ad eum! Officiis autem aliquam numquam incidunt!</p>
+                    <form action="#" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" />
+
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" />
+
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="30" rows="10"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+             </section>
+
         </main>
 
+        <!-- Footer with copyright and probably something else -->
         <footer>
             <p>&copy; Matt Enterprises 2024</p>
-            <nav>
-                <ul>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul>
-            </nav>
+            
         </footer>
 
     </body>
