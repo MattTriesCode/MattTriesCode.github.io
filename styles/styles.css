@@ -1,0 +1,310 @@
+/* SITEWIDE STYLES */
+
+    :root {
+        --light-text: #eeeeee;
+        --dark-text: #222222;
+        --light-bg: rgb(240,240,240);
+        --dark-bg: rgb(20,20,30);
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+    }
+
+    p {
+        line-height: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+/* HEADER AND TOP NAVIGATION */
+
+    header {
+        background-color: var(--dark-bg);
+        padding: 2rem;
+        box-shadow: 0 0 10px gray;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;  
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 1rem;
+    }
+
+    header a {
+        color: var(--light-text);
+        transition: .2s;
+    }
+
+    /* emphasizes the email button on the top right of header */
+    header nav a:last-child {
+        color: var(--dark-text);
+        background-color: var(--light-bg);
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+    }
+
+    header a:hover {
+        text-decoration: underline;
+    }
+
+    /* Display header name and external links to left and right on landscape / desktop */
+    @media (min-width: 750px) {
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2em 3rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+
+        header nav {
+            flex-direction: row;
+        }
+
+        header nav a {
+            margin-left: 2em;
+        }
+    }
+
+/* INTRODUCTION (HERO) SECTION */
+
+    #hero nav {
+        margin: 2rem 0;
+    }
+
+    /* three inline links to the skills, endorsements, and contact sections */
+    #hero nav a {
+        display: inline-block;
+        padding: .5rem 1rem;
+        border: 2px solid var(--dark-text);
+        color: var(--dark-text);
+        border-radius: .5rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        transition: .2s;
+    }
+
+    #hero nav a:hover {
+        background-color: var(--dark-bg);
+        color: var(--light-text);
+    }
+
+    /* Make photo a circle, and force it to fit correctly */
+    #photo img {
+        border-radius: 50%;
+        width: 300px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        margin: 2rem 0;
+    }
+
+    /* display intro paragraph and photo side by side on landscape / desktop */
+    @media (min-width: 750px) {
+
+        #introduction {
+            text-align: left;
+        }
+
+        #hero {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+            padding: 3rem;
+        }
+
+        #intro {
+            flex: 4;
+        }
+
+        #photo {
+            flex: 2;
+        }
+
+        #photo img {
+            width: 400px;
+            margin: 1rem 0;
+        }
+    }
+
+/* CODING SKILLS SECTION */
+
+    #skills {
+        border-top: 1px #DDD solid;
+    }
+
+    #skills ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* The "buttons" showing a list of coding skills */
+    #skills ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        padding: .5rem 1.5rem;
+        margin: 1rem;
+        border: 1.5px solid #CCC;
+        border-radius: 1rem;
+    }
+
+    /* The actual icon / image of the coding skill */
+    #skills ul li img {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+        border-radius: 2px;
+    }
+
+/* ENDORSEMENTS SECTION */
+
+    #endorsements {
+        background-color: #567;
+        color: var(--light-text);
+        box-shadow: 0 0 10px gray;
+    }
+
+    .person {
+        border-radius: 1rem;
+        background-color: #456;
+        padding: .5rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .person img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 200px;
+        border-radius: 50%;
+        margin: 1rem 0;
+    }
+
+    .person img + h3 {
+        font-weight: 600;
+        margin-bottom: .5em;
+        filter: brightness(.8);
+    }
+
+    .person p {
+        font-style: italic;
+        filter: brightness(.8);
+    }
+
+    @media (min-width: 750px) {
+
+        #endorsements {
+            padding: 3rem;
+        }
+
+        .endorsement {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+        
+        .quote p {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+       
+    }
+
+/* CONTACT ME SECTION */
+
+    #contact form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact form label {
+        margin-bottom: .5rem;
+    }
+
+    #contact form input, #contact form textarea {
+        font-family: 'Poppins',sans-serif;
+        border: 1px solid #CCC;
+        padding: .5rem;
+        margin-bottom: 1rem;
+        resize: none;
+        width: 80%;
+    }
+
+    #contact form button {
+        font-size: 1rem;
+        padding: 1rem;
+        font-family: 'Poppins',sans-serif;
+        color: #fff;
+        background-color: #567;
+        width: 50%;
+        /* half a second to lower brightness (see next rule) */
+        transition: .5s;
+    }
+
+    #contact form button:hover {
+        filter: brightness(.8);
+    }
+
+    @media (min-width: 750px) {
+
+        #contact {
+            display: flex;
+            align-items: top;
+            gap: 3rem;
+            padding: 3rem;
+        }
+
+        #contactme {
+            flex: 3;
+        }
+
+        form {
+            flex: 3;
+        }
+    }
+
+/* FOOTER */
+
+    footer {
+        background-color: var(--dark-bg);
+        color: var(--light-text);
+        padding: 2em;
+        box-shadow: 0 0 10px gray;
+    }

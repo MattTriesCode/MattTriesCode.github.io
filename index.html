@@ -3,12 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>My Portfolio</title>
+        <!-- All three below style links copied from google fonts to load a font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <!-- Link to some kind of Font Awesome alternate repository to use icons - you can 
+         go to the Font Awesome website and enter your email to get what is probably a more 
+         direct link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- a stylesheet to reset any preset browser styles -->
         <link rel="stylesheet" type="text/css" href="styles/reset.css" />
+        <!-- The actual custom portfolio styles -->
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400">
         <script src="scripts.js" type="text/javascript" defer></script>
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <title>Matthew Coder's Portfolio</title>
     </head>
     <body>
         
@@ -17,12 +25,18 @@
             <h1><a href="/">Matthew Coder</a></h1>
             <nav>
                 <a href="https://github.com" target="_blank">
+                    <!-- this is syntax used to create an element with classes that
+                     add an icon and styling from font awesome styles included
+                     in the head document -->
+                    <i class="fa-brands fa-github"></i>
                     <span>Github</span>
                 </a>
                 <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
                 <a href="mailto:mattcoder@example.com">
+                    <i class="fa-solid fa-envelope"></i>
                     <span>Email</span>
                 </a>
             </nav>
@@ -32,20 +46,28 @@
         <main>
             
             <!-- Intro paragraph and photo -->
-            <section id="intro">
-                <h2>Need help coding?</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, accusamus sint! Culpa dolorum, inventore hic cumque nobis quas voluptates repellendus voluptas possimus libero. Maxime deleniti aliquid amet dolorum unde, repellat illo eius alias doloremque quos in provident, atque, necessitatibus ut est beatae. Inventore nesciunt, explicabo totam eveniet pariatur repellendus suscipit.</p>
-                <nav>
-                    <a href="#skills">
-                        <span>Skills</span>
-                    </a>
-                    <a href="#references">
-                        <span>Endorsements</span>
-                    </a>
-                    <a href="#contact">
-                        <span>Contact Me!</span>
-                    </a>
-                </nav>
+            <section id="hero">
+                <div id="photo">
+                    <img src="images/headshot.jpg" alt="Me looking very codey" />
+                </div>
+                <div id="introduction">
+                    <h2>Hello! Need help coding?</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, accusamus sint! Culpa dolorum, inventore hic cumque nobis quas voluptates repellendus voluptas possimus libero. Maxime deleniti aliquid amet dolorum unde, repellat illo eius alias doloremque quos in provident, atque, necessitatibus ut est beatae. Inventore nesciunt, explicabo totam eveniet pariatur repellendus suscipit.</p>
+                    <nav>
+                        <a href="#skills">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Skills</span>
+                        </a>
+                        <a href="#references">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Endorsements</span>
+                        </a>
+                        <a href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact Me!</span>
+                        </a>
+                    </nav>
+                </div>
             </section>
 
             <!-- Explanation of experience and list of skills -->
@@ -54,24 +76,24 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, pariatur, aspernatur numquam perspiciatis dolorem labore iste recusandae aperiam facilis doloremque nemo libero inventore quod ipsa nihil ullam molestiae qui fugit temporibus. Voluptate et cum aliquid magnam. A quasi totam nesciunt expedita blanditiis. Iste quis blanditiis voluptatum facilis iusto est laborum!</p>
                 <ul>
                     <li>
-                        <img src="" alt="" />
-                        <span></span>
+                        <img src="images/html-logo.webp" alt="HTML" />
+                        <span>HTML</span>
                     </li>
                     <li>
-                        <img src="" alt="" />
-                        <span></span>
+                        <img src="images/css-logo.webp" alt="CSS" />
+                        <span>CSS</span>
                     </li>
                     <li>
-                        <img src="" alt="" />
-                        <span></span>
+                        <img src="images/javascript-logo.webp" alt="JavaScript" />
+                        <span>JavaScript</span>
                     </li>
                     <li>
-                        <img src="" alt="" />
-                        <span></span>
+                        <img src="images/node-logo.webp" alt="Node" />
+                        <span>Node.js</span>
                     </li>
                     <li>
-                        <img src="" alt="" />
-                        <span></span>
+                        <img src="images/react-logo.webp" alt="React" />
+                        <span>React.js</span>
                     </li>
                 </ul>
             </section>
@@ -79,9 +101,9 @@
             <!-- Endorsements / testimonials from satisfied customers -->
             <section id="endorsements">
                 <h2>Endorsements</h2>
-                <div class="twoblocks">
+                <div class="endorsement">
                     <div class="person">
-                        <img src="" alt="" />
+                        <img src="images/endorser.jpg" alt="An endorser who looks like me" />
                         <h3>John Smith</h3>
                         <p>Professional Pep Talker</p>
                     </div>
@@ -93,9 +115,10 @@
 
             <!-- A contact form -->
              <section id="contact">
-                <h2>Contact Me!</h2>
-                <div class="twoblocks">
+                <div id="contactme">
+                    <h2>Contact Me!</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente a quam repellendus quasi facere mollitia obcaecati fugit minus, cupiditate doloremque tempore voluptatum similique qui quis vero, vel, corporis cum ipsa. Quas labore autem officiis! Quod aut atque eveniet obcaecati quo iste delectus laboriosam ad eum! Officiis autem aliquam numquam incidunt!</p>
+                </div>
                     <form action="#" method="POST">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" />
@@ -108,7 +131,6 @@
 
                         <button type="submit">Send Message</button>
                     </form>
-                </div>
              </section>
 
         </main>
